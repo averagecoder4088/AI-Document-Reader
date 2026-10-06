@@ -1,0 +1,10 @@
+---
+source: Simply Wall Street (headline via Google News RSS)
+url: https://news.google.com/rss/articles/CBMi3AFBVV95cUxQcFRJeUNyTXl1eGlmTXUyemhDWHRxSUVicjluZy1QbFlfY2w4UWVrQWdaQUFsQllUanRZa2d6UzhHbHYyQmhHUXdQakxnNW9US1A4Z1RtY2g4eDFuSkpvNzhfS1M0TnJ2aHU3MlE0YjRhbWdwRXBudXpoWW5sWXRkckFXaTExN3Znenc3c0tNMkpyajkwcExrT2o1cVdjbktHV0dBR0pES0RYYmpUMVR1NjhLcXFYX3c4SXBVU1VOQlV2QVpUc1hVYXRZX1k0QU1hSzIwd05jaXRKYndh0gHiAUFVX3lxTFBnR0VSTUFWakU3WGNfQ3U5dXlfMmZRQVI3NGFoNDJDODhIOFplMUVEWXpyZjZMV0gtUTdtSnJSY1RwUURJT210LTdmODYtM3p6ZXpab3FXenVUZ1dHN3JaVkVJN2s0RUZJNjB0ZjdkekdPVjNVdVF1U2VydUZRTDRoQW9nZGM3V0t4VmlJLXRIcXJXSUJ3NENVRzB3SmZrcWVkckNoaGEzemNPNEJzX29GYnRlX3A1c2VJN01TNDhtY19KMlJHY3BLM2JlRzZNend2U08tdk1DcWdkOU9ST2hXbHc?oc=5
+published: 2026-07-21
+type: news headline (title only; article text not fetched)
+---
+
+# Results: Reliance Industries Limited Beat Earnings Expectations And Analysts Now Have New Forecasts
+
+Only the headline was fetched. The article body was not retrieved.

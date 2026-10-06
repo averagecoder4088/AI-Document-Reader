@@ -1,0 +1,279 @@
+{
+  "extraction": {
+    "triage": [
+      {
+        "doc_id": "S1",
+        "company_match": true,
+        "published": "2026-08-09",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "news article about Q1 results, matches company and not outdated"
+      },
+      {
+        "doc_id": "S2",
+        "company_match": true,
+        "published": "2026-08-11",
+        "tier": 2,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "official earnings-call transcript, matches company"
+      },
+      {
+        "doc_id": "S3",
+        "company_match": true,
+        "published": "2026-08-08",
+        "tier": 1,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "company press release announcing Q1 results"
+      },
+      {
+        "doc_id": "S4",
+        "company_match": true,
+        "published": "2024-03-18",
+        "tier": 3,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "older promoter-pledge data superseded by newer filing"
+      },
+      {
+        "doc_id": "S5",
+        "company_match": true,
+        "published": "2026-08-12",
+        "tier": 4,
+        "include": false,
+        "injection_attempt": true,
+        "reason": "blog with promotional advice and an injection note"
+      },
+      {
+        "doc_id": "S6",
+        "company_match": false,
+        "published": "2026-08-20",
+        "tier": 3,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "refers to a different Sarvottam Cable Network, not the listed company"
+      },
+      {
+        "doc_id": "S7",
+        "company_match": true,
+        "published": "2026-09-02",
+        "tier": 1,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "official SEBI disclosure, relevant and recent"
+      },
+      {
+        "doc_id": "S8",
+        "company_match": true,
+        "published": "2026-07-15",
+        "tier": 1,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "official shareholding pattern filing, matches company"
+      }
+    ],
+    "claims": [
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Revenue from operations rose to \u20b91,428 crore, a 35% increase from the year-ago period."
+      },
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Net profit rose about 6% to \u20b982 crore."
+      },
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Operating margins contracted by 170 basis points to 11.2%."
+      },
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Shares of the company fell 3.2% to \u20b91,012 on the NSE."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "For the full year FY27 we are maintaining our revenue growth guidance of 15 to 17 percent."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "Data-centre cables are now about 9 percent of our domestic revenue, and we think that can double in two years."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "Margins are down mainly due to copper, about two-thirds of contracts have price-variation clauses."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Receivable days increased from 78 to 96 over the last year."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Bharuch capex is \u20b9620 crore in total, about 70 percent already spent."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Net debt to equity is 0.35 times."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Revenue from operations was \u20b91,248 crore in Q1 FY27, up 18.0% YoY."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "EBITDA was \u20b9140 crore in Q1 FY27, up 2.6% YoY."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "EBITDA margin was 11.2% in Q1 FY27, down 170 basis points YoY."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Profit after tax was \u20b982 crore in Q1 FY27, up 5.9% YoY."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Order book stood at \u20b93,900 crore as of 30 June 2026, up from \u20b93,150 crore a year ago."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Exports contributed 21% of revenue in Q1 FY27 (Q1 FY26: 16%)."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "The new Bharuch plant, adding about 30% to cable capacity, is on track to begin commercial production in Q3 FY27."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "management_claim",
+        "text": "We expect to pass on the sharp rise in copper prices to customers over the next two quarters."
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "The company received a GST demand order of \u20b946.3 crore (including interest and penalty)."
+      },
+      {
+        "doc_id": "S7",
+        "kind": "management_claim",
+        "text": "The company believes it has a strong case on merits and does not expect any material impact on its financial position or operations."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Promoters & promoter group holding was 58.2% as of June 2026."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Promoter pledged holdings were 4.1% of promoter holding as of June 2026."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Foreign institutional investors held 11.8% as of June 2026."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Domestic institutional investors held 14.6% as of June 2026."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Public and others held 15.4% as of June 2026."
+      }
+    ],
+    "metrics": [
+      {
+        "doc_id": "S1",
+        "key": "revenue_q1_fy27",
+        "value": 1428.0,
+        "unit": "cr",
+        "stated_yoy_pct": 35.0
+      },
+      {
+        "doc_id": "S3",
+        "key": "revenue_q1_fy27",
+        "value": 1248.0,
+        "unit": "cr",
+        "stated_yoy_pct": 18.0
+      },
+      {
+        "doc_id": "S3",
+        "key": "revenue_q1_fy26",
+        "value": 1058.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_q1_fy27",
+        "value": 140.0,
+        "unit": "cr",
+        "stated_yoy_pct": 2.6
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_q1_fy26",
+        "value": 136.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_margin_pct_q1_fy27",
+        "value": 11.2,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "pat_q1_fy27",
+        "value": 82.0,
+        "unit": "cr",
+        "stated_yoy_pct": 5.9
+      },
+      {
+        "doc_id": "S3",
+        "key": "pat_q1_fy26",
+        "value": 77.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "order_book_cr_jun26",
+        "value": 3900.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      }
+    ]
+  },
+  "python_checks": [
+    "CONFLICT revenue_q1_fy27: S1=1428, S3=1248. Highest-tier source: S3 (1248).",
+    "GROWTH revenue_q1_fy27 S1: 1428 vs prior 1058 (S3) = 35.0%, stated 35% -> matches",
+    "GROWTH revenue_q1_fy27 S3: 1248 vs prior 1058 (S3) = 18.0%, stated 18% -> matches",
+    "GROWTH pat_q1_fy27 S3: 82 vs prior 77 (S3) = 6.5%, stated 5.9% -> DOES NOT MATCH",
+    "GROWTH ebitda_q1_fy27 S3: 140 vs prior 136 (S3) = 2.9%, stated 2.6% -> matches",
+    "MARGIN with revenue S1=1428: EBITDA 140 (S3) / revenue = 9.8%, stated margin 11.2% (S3) -> DOES NOT MATCH",
+    "MARGIN with revenue S3=1248: EBITDA 140 (S3) / revenue = 11.2%, stated margin 11.2% (S3) -> matches"
+  ]
+}

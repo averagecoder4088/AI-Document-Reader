@@ -1,0 +1,188 @@
+{
+  "decisions": {
+    "S1": {
+      "name": "Business Standard (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S2": {
+      "name": "ad-hoc-news.de (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S3": {
+      "name": "Simply Wall Street (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-07-21",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S4": {
+      "name": "Alice Blue (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-09-30",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S5": {
+      "name": "TechGraph (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-09-20",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S6": {
+      "name": "Yahoo Finance via yfinance (market-data aggregator, not an exchange filing)",
+      "tier": 4,
+      "published": "2026-10-06",
+      "included": false,
+      "reason": "tier 4 source (blog / tip sheet / promotional)",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S7": {
+      "name": "Yahoo Finance via yfinance (aggregated company financials, not an exchange filing)",
+      "tier": 4,
+      "published": "2026-10-06",
+      "included": false,
+      "reason": "tier 4 source (blog / tip sheet / promotional)",
+      "injection": false,
+      "injection_phrase": null
+    }
+  },
+  "extraction": {
+    "triage": [
+      {
+        "doc_id": "S1",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance, matches company, tier 3 news"
+      },
+      {
+        "doc_id": "S2",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance, matches company, tier 3 news"
+      },
+      {
+        "doc_id": "S3",
+        "company_match": true,
+        "published": "2026-07-21",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance earnings, matches company, tier 3 news"
+      },
+      {
+        "doc_id": "S4",
+        "company_match": true,
+        "published": "2026-09-30",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance green ammonia deal, matches company, tier 3 news"
+      },
+      {
+        "doc_id": "S5",
+        "company_match": true,
+        "published": "2026-09-20",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance stock price, matches company, tier 3 news"
+      },
+      {
+        "doc_id": "S6",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 4,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Market data snapshot from Yahoo, matches company but is non-official aggregator, tier 4"
+      },
+      {
+        "doc_id": "S7",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 4,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Aggregated quarterly financials from Yahoo, matches company, non-official source, tier 4"
+      }
+    ],
+    "claims": [
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Reliance Industries gains 3% as Jio IPO plan fuels hopes of value unlocking"
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Reliance Industries stock sits 24.42 percent below its high"
+      }
+    ],
+    "metrics": []
+  },
+  "python_checks": [
+    "No checks could be computed."
+  ],
+  "quarantined_claims": [],
+  "recall_missing_figures": {},
+  "verifier_log": [
+    {
+      "round": 0,
+      "violations": [
+        "[bear case] no citation: \"- The available information provides no details on current revenue, pr...\"",
+        "[bear case] no citation: \"- Absence of data on institutional holdings, promoter pledge levels or...\"",
+        "[bear case] \"[Open questions]\" is not a source citation. Cite only [S#] sources.",
+        "[bear case] \"[Open questions]\" is not a source citation. Cite only [S#] sources.",
+        "Included source S3 is never used in the brief body (use it, or list it as unused in Sources).",
+        "Included source S4 is never used in the brief body (use it, or list it as unused in Sources).",
+        "Included source S5 is never used in the brief body (use it, or list it as unused in Sources)."
+      ]
+    },
+    {
+      "round": 1,
+      "violations": [
+        "[bear case] contains investment-advice language (buy/sell/target/upside)."
+      ]
+    },
+    {
+      "round": 2,
+      "violations": [
+        "Included source S3 is never used in the brief body (use it, or list it as unused in Sources).",
+        "Included source S4 is never used in the brief body (use it, or list it as unused in Sources).",
+        "Included source S5 is never used in the brief body (use it, or list it as unused in Sources)."
+      ]
+    },
+    {
+      "round": 3,
+      "violations": [
+        "Included source S3 is never used in the brief body (use it, or list it as unused in Sources).",
+        "Included source S4 is never used in the brief body (use it, or list it as unused in Sources).",
+        "Included source S5 is never used in the brief body (use it, or list it as unused in Sources)."
+      ]
+    }
+  ]
+}

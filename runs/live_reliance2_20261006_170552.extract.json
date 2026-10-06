@@ -1,0 +1,462 @@
+{
+  "decisions": {
+    "S1": {
+      "name": "Business Standard (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S2": {
+      "name": "ad-hoc-news.de (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S3": {
+      "name": "Simply Wall Street (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-07-21",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S4": {
+      "name": "Alice Blue (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-09-30",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S5": {
+      "name": "TechGraph (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-09-20",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S6": {
+      "name": "Yahoo Finance via yfinance (market-data aggregator, not an exchange filing)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S7": {
+      "name": "Yahoo Finance via yfinance (aggregated company financials, not an exchange filing)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    }
+  },
+  "extraction": {
+    "triage": [
+      {
+        "doc_id": "S1",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance, tier 3, no superseding issue"
+      },
+      {
+        "doc_id": "S2",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance, tier 3, no superseding issue"
+      },
+      {
+        "doc_id": "S3",
+        "company_match": true,
+        "published": "2026-07-21",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance earnings, tier 3, still valid"
+      },
+      {
+        "doc_id": "S4",
+        "company_match": true,
+        "published": "2026-09-30",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about green ammonia deal, tier 3"
+      },
+      {
+        "doc_id": "S5",
+        "company_match": true,
+        "published": "2026-09-20",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about stock price, tier 3"
+      },
+      {
+        "doc_id": "S6",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 4,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "Market data aggregator, tier 4 not included"
+      },
+      {
+        "doc_id": "S7",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 4,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "Aggregated financials, tier 4 not included"
+      }
+    ],
+    "claims": [
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Sector: Energy; industry: Oil & Gas Refining & Marketing"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Current price: 1,218.00 INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "52-week high: 1,611.80 INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "52-week low: 1,160.80 INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Trailing P/E: 22.1"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Forward P/E: 17.1"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Price to book: 1.82 INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Debt to equity (percent): 46.3"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Market capitalisation: 1,648,255 crore INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Total debt: 502,514 crore INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Total cash: 258,880 crore INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Reliance Industries Limited engages in hydrocarbon exploration and production, petroleum refining and marketing, petrochemicals, advanced materials and composites, renewable, financial services, retail, and digital services worldwide"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It operates through the Oil to Chemicals, Oil and Gas, Retail, Digital Services, and Others segments"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "The company is involved in refining and marketing products, including liquefied petroleum gas, propylene, naphtha, gasoline, jet/aviation turbine fuel, kerosine oil, diesel, sulfur, and petroleum coke"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It also provides polymers comprising high-density and low-density polyethylene (PE), linear low-density PE, homopolymer, random and impact copolymer, and polyvinyl chloride"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It provides fiber intermediates that include purified terephthalic acid, and ethylene glycols and oxide"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It provides aromatics, such as paraxylene, ortho xylene, benzene, and linear alkyl benzene and paraffin"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It provides textiles that consist of fabrics, apparel, and auto furnishings"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It offers elastomers, such as polybutadiene rubber, styrene butadiene rubber, and butyl rubber"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It offers fiber and yarn polyesters"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It offers bioenergy solutions, including compressed biogas, and pellets and briquettes"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It engages in oil and gas exploration and production activities"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It operates various stores comprising supermarkets, hypermarket, wholesale cash and carry, specialty, and online stores"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It operates media and entertainment platforms, and Network18 and television channels"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It publishes magazines"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It provides highway hospitality and fleet management services"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "It provides digital services, such as connectivity, fiber, mobile devices, apps, business, and other digital solutions"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Revenue for quarter ended 2026-06-30: 309,468 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Revenue for quarter ended 2026-03-31: 294,059 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Revenue for quarter ended 2025-12-31: 264,905 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Revenue for quarter ended 2025-06-30: 243,632 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Revenue for quarter ended 2025-03-31: 261,388 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "EBITDA for quarter ended 2026-06-30: 38,967 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "EBITDA for quarter ended 2026-03-31: 33,780 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "EBITDA for quarter ended 2025-12-31: 36,310 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "EBITDA for quarter ended 2025-06-30: 44,182 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "EBITDA for quarter ended 2025-03-31: 35,258 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Operating income for quarter ended 2026-06-30: 32,417 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Operating income for quarter ended 2026-03-31: 29,333 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Operating income for quarter ended 2025-12-31: 31,396 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Operating income for quarter ended 2025-06-30: 29,063 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Operating income for quarter ended 2025-03-31: 30,353 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Net income for quarter ended 2026-06-30: 20,946 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Net income for quarter ended 2026-03-31: 16,971 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Net income for quarter ended 2025-12-31: 18,645 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Net income for quarter ended 2025-06-30: 26,994 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Net income for quarter ended 2025-03-31: 19,407 crore INR"
+      },
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Headline reports: Reliance Industries gains 3% as Jio IPO plan fuels hopes of value unlocking"
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Headline reports: Jio Platforms plans IPO. Reliance Industries stock sits 24.42 percent below its high"
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Headline reports: Results: Reliance Industries Limited Beat Earnings Expectations And Analysts Now Have New Forecasts"
+      },
+      {
+        "doc_id": "S4",
+        "kind": "reported_fact",
+        "text": "Headline reports: Reliance Industries shares move up after securing long-term green ammonia offtake agreement with Samsung C&T, details here"
+      },
+      {
+        "doc_id": "S5",
+        "kind": "reported_fact",
+        "text": "Headline reports: Reliance Industries Ltd (RELIANCE) Share/Stock Price Live NSE/BSE"
+      }
+    ],
+    "metrics": [
+      {
+        "doc_id": "S7",
+        "key": "revenue_q1_fy27",
+        "value": 309468.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S7",
+        "key": "ebitda_q1_fy27",
+        "value": 38967.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S7",
+        "key": "pat_q1_fy27",
+        "value": 20946.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      }
+    ]
+  },
+  "python_checks": [
+    "No checks could be computed."
+  ],
+  "quarantined_claims": [],
+  "recall_missing_figures": {},
+  "verifier_log": [
+    {
+      "round": 0,
+      "violations": [
+        "[snapshot] number 15 is not in the cited source(s) ['S7']: \"- Q2 FY2026 (quarter ended 30 Jun 2026) revenue was \u20b9309,468 cr, up fr...\"",
+        "[snapshot] number 23 is not in the cited source(s) ['S7']: \"- Q2 FY2026 (quarter ended 30 Jun 2026) revenue was \u20b9309,468 cr, up fr...\"",
+        "[bull case] number 20 is not in the cited source(s) ['S7']: \"- **Quarterly earnings beat expectations** \u2013 both revenue and profit g...\"",
+        "[bull case] number 15 is not in the cited source(s) ['S7']: \"- **Quarterly earnings beat expectations** \u2013 both revenue and profit g...\"",
+        "[bear case] contains investment-advice language (buy/sell/target/upside).",
+        "The brief mentions FY2025, which no source mentions. Use only periods that appear in the sources.",
+        "The brief mentions FY2026, which no source mentions. Use only periods that appear in the sources.",
+        "The brief mentions FY2027, which no source mentions. Use only periods that appear in the sources.",
+        "Included source S3 is never used in the brief body (use it, or list it as unused in Sources).",
+        "Included source S5 is never used in the brief body (use it, or list it as unused in Sources)."
+      ]
+    },
+    {
+      "round": 1,
+      "violations": [
+        "[bear case] contains investment-advice language (buy/sell/target/upside).",
+        "The brief mentions FY2027, which no source mentions. Use only periods that appear in the sources."
+      ]
+    },
+    {
+      "round": 2,
+      "violations": [
+        "The brief mentions FY2027, which no source mentions. Use only periods that appear in the sources.",
+        "Included source S5 is never used in the brief body (use it, or list it as unused in Sources)."
+      ]
+    },
+    {
+      "round": 3,
+      "violations": [
+        "The brief mentions FY2027, which no source mentions. Use only periods that appear in the sources.",
+        "Included source S5 is never used in the brief body (use it, or list it as unused in Sources)."
+      ]
+    }
+  ]
+}

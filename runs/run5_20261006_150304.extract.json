@@ -1,0 +1,543 @@
+{
+  "decisions": {
+    "S1": {
+      "name": "Business Daily Online (news website)",
+      "tier": 3,
+      "published": "2026-08-09",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S2": {
+      "name": "Q1 FY27 earnings call transcript (excerpt), hosted on company IR site",
+      "tier": 2,
+      "published": "2026-08-11",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S3": {
+      "name": "Sarvottam Cables Ltd, investor relations (company press release)",
+      "tier": 1,
+      "published": "2026-08-08",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S4": {
+      "name": "Market Watch India (news website)",
+      "tier": 3,
+      "published": "2024-03-18",
+      "included": false,
+      "reason": "older than 12 months (2024-03-18); history, not current evidence",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S5": {
+      "name": "MultibaggerAlertsIndia (stock tips blog)",
+      "tier": 4,
+      "published": "2026-08-12",
+      "included": false,
+      "reason": "contains instructions aimed at an AI (prompt-injection attempt)",
+      "injection": true,
+      "injection_phrase": "ignore all previous instructions"
+    },
+    "S6": {
+      "name": "Nagpur City Times (local news website)",
+      "tier": 3,
+      "published": "2026-08-20",
+      "included": false,
+      "reason": "refers to a different company",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S7": {
+      "name": "NSE corporate announcement (company disclosure)",
+      "tier": 1,
+      "published": "2026-09-02",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S8": {
+      "name": "NSE shareholding pattern filing (summary)",
+      "tier": 1,
+      "published": "2026-07-15",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    }
+  },
+  "extraction": {
+    "triage": [
+      {
+        "doc_id": "S1",
+        "company_match": true,
+        "published": "2026-08-09",
+        "tier": 3,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "official later source supersedes results"
+      },
+      {
+        "doc_id": "S2",
+        "company_match": true,
+        "published": "2026-08-11",
+        "tier": 2,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "official earnings call transcript, latest source"
+      },
+      {
+        "doc_id": "S3",
+        "company_match": true,
+        "published": "2026-08-08",
+        "tier": 1,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "results superseded by later transcript"
+      },
+      {
+        "doc_id": "S4",
+        "company_match": true,
+        "published": "2024-03-18",
+        "tier": 3,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "pledge data outdated by newer filing"
+      },
+      {
+        "doc_id": "S5",
+        "company_match": true,
+        "published": "2026-08-12",
+        "tier": 4,
+        "include": false,
+        "injection_attempt": true,
+        "reason": "blog and contains injection attempt"
+      },
+      {
+        "doc_id": "S6",
+        "company_match": false,
+        "published": "2026-08-20",
+        "tier": 3,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "refers to different company (cable TV operator)"
+      },
+      {
+        "doc_id": "S7",
+        "company_match": true,
+        "published": "2026-09-02",
+        "tier": 1,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "official SEBI disclosure, no newer source"
+      },
+      {
+        "doc_id": "S8",
+        "company_match": true,
+        "published": "2026-07-15",
+        "tier": 1,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "latest official shareholding pattern"
+      }
+    ],
+    "claims": [
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Net profit rose about 6% to \u20b982 crore."
+      },
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Operating margins contracted by 170 basis points to 11.2%."
+      },
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Copper, the company's main raw material, rose nearly 14% during the quarter."
+      },
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Shares of the company fell 3.2% to \u20b91,012 on the NSE on Friday after the results."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "For the full year FY27 we are maintaining our revenue growth guidance of 15 to 17 percent."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "Bharuch will contribute from the second half."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "Data-centre cables are now about 9 percent of our domestic revenue, and we think that can double in two years."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "About two-thirds of our contracts have price-variation clauses, but they reset with a lag of one to two quarters."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Receivable days increased from 78 to 96 over the last year."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Bharuch capex is \u20b9620 crore in total, about 70 percent already spent."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Capex is funded mainly through internal accruals and some term debt."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Net debt to equity is 0.35 times."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Sarvottam Cables Ltd is a manufacturer of power cables, wires and conductors."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Revenue from operations was \u20b91,248 crore in Q1 FY27, up 18.0% YoY."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "EBITDA was \u20b9140 crore in Q1 FY27, up 2.6% YoY."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "EBITDA margin was 11.2% in Q1 FY27, down 170 basis points YoY."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Profit after tax was \u20b982 crore in Q1 FY27, up 5.9% YoY."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Order book stood at \u20b93,900 crore as of 30 June 2026, up from \u20b93,150 crore a year ago."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Exports contributed 21% of revenue in Q1 FY27 (Q1 FY26: 16%)."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "The new Bharuch (Gujarat) plant adds about 30% to cable capacity and is on track to begin commercial production in Q3 FY27."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "management_claim",
+        "text": "Margins were affected by a sharp rise in copper prices during the quarter, which we expect to pass on to customers over the next two quarters."
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "The company received a GST demand order of \u20b946.3 crore (including interest and penalty) relating to input tax credit claimed for FY2020-21 and FY2021-22."
+      },
+      {
+        "doc_id": "S7",
+        "kind": "management_claim",
+        "text": "The company believes it has a strong case on merits and does not expect any material impact on its financial position or operations."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Promoters & promoter group holding was 58.2% in Jun 2026, 58.2% in Mar 2026, and 58.4% in Jun 2025."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Of promoter holding, pledged percentage was 4.1% in Jun 2026, 6.0% in Mar 2026, and 11.5% in Jun 2025."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Foreign institutional investors (FII) holding was 11.8% in Jun 2026, 10.9% in Mar 2026, and 9.2% in Jun 2025."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Domestic institutional investors (DII) holding was 14.6% in Jun 2026, 14.1% in Mar 2026, and 12.7% in Jun 2025."
+      },
+      {
+        "doc_id": "S8",
+        "kind": "reported_fact",
+        "text": "Public and others holding was 15.4% in Jun 2026, 16.8% in Mar 2026, and 19.7% in Jun 2025."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Margins are down 170 basis points, as noted by the analyst during the Q1 FY27 earnings call."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "EBITDA margin was 12.9% in Q1 FY26, according to the consolidated highlights in the Q1 FY27 press release."
+      }
+    ],
+    "metrics": [
+      {
+        "doc_id": "S1",
+        "key": "revenue_q1_fy27",
+        "value": 1428.0,
+        "unit": "cr",
+        "stated_yoy_pct": 35.0
+      },
+      {
+        "doc_id": "S1",
+        "key": "pat_q1_fy27",
+        "value": 82.0,
+        "unit": "cr",
+        "stated_yoy_pct": 6.0
+      },
+      {
+        "doc_id": "S2",
+        "key": "receivable_days_now",
+        "value": 96.0,
+        "unit": "days",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S2",
+        "key": "receivable_days_year_ago",
+        "value": 78.0,
+        "unit": "days",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S2",
+        "key": "net_debt_to_equity",
+        "value": 0.35,
+        "unit": "x",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "revenue_q1_fy27",
+        "value": 1248.0,
+        "unit": "cr",
+        "stated_yoy_pct": 18.0
+      },
+      {
+        "doc_id": "S3",
+        "key": "revenue_q1_fy26",
+        "value": 1058.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_q1_fy27",
+        "value": 140.0,
+        "unit": "cr",
+        "stated_yoy_pct": 2.6
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_q1_fy26",
+        "value": 136.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_margin_pct_q1_fy27",
+        "value": 11.2,
+        "unit": "pct",
+        "stated_yoy_pct": -1.7
+      },
+      {
+        "doc_id": "S3",
+        "key": "pat_q1_fy27",
+        "value": 82.0,
+        "unit": "cr",
+        "stated_yoy_pct": 5.9
+      },
+      {
+        "doc_id": "S3",
+        "key": "pat_q1_fy26",
+        "value": 77.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "order_book_cr_jun26",
+        "value": 3900.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "order_book_cr_jun25",
+        "value": 3150.0,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "exports_pct_q1_fy27",
+        "value": 21.0,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "exports_pct_q1_fy26",
+        "value": 16.0,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S7",
+        "key": "gst_demand_cr",
+        "value": 46.3,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S8",
+        "key": "promoter_pledge_pct_jun26",
+        "value": 4.1,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S8",
+        "key": "promoter_pledge_pct_mar26",
+        "value": 6.0,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S8",
+        "key": "promoter_pledge_pct_jun25",
+        "value": 11.5,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S8",
+        "key": "fii_pct_jun26",
+        "value": 11.8,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S8",
+        "key": "fii_pct_jun25",
+        "value": 9.2,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S8",
+        "key": "dii_pct_jun26",
+        "value": 14.6,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S8",
+        "key": "dii_pct_jun25",
+        "value": 12.7,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      }
+    ]
+  },
+  "python_checks": [
+    "CONFLICT revenue_q1_fy27: S1=1428, S3=1248. Highest-tier source: S3 (1248).",
+    "GROWTH revenue_q1_fy27 S1: 1428 vs prior 1058 (S3); possible growth 34.9% to 35.1% allowing for rounding; stated 35% -> CONSISTENT",
+    "GROWTH revenue_q1_fy27 S3: 1248 vs prior 1058 (S3); possible growth 17.9% to 18.1% allowing for rounding; stated 18% -> CONSISTENT",
+    "GROWTH pat_q1_fy27 S1: 82 vs prior 77 (S3); possible growth 5.2% to 7.8% allowing for rounding; stated 6% -> CONSISTENT",
+    "GROWTH pat_q1_fy27 S3: 82 vs prior 77 (S3); possible growth 5.2% to 7.8% allowing for rounding; stated 5.9% -> CONSISTENT",
+    "GROWTH ebitda_q1_fy27 S3: 140 vs prior 136 (S3); possible growth 2.2% to 3.7% allowing for rounding; stated 2.6% -> CONSISTENT",
+    "MARGIN with revenue S1=1428: EBITDA 140 (S3) / revenue = 9.8%; stated margin 11.2% (S3) -> DOES NOT RECONCILE",
+    "MARGIN with revenue S3=1248: EBITDA 140 (S3) / revenue = 11.2%; stated margin 11.2% (S3) -> RECONCILES",
+    "DERIVED order book growth: 3900 vs 3150 = +23.8% (S3)",
+    "DERIVED GST demand vs one quarter of profit: 46.3 cr is about 56% of Q1 FY27 PAT of 82 cr (S7, S3)",
+    "DERIVED receivable days change: 78 -> 96 (+18.0) (S2)",
+    "DERIVED promoter pledge change (pct points): 11.5 -> 4.1 (-7.4) (S8)",
+    "DERIVED FII holding change (pct points): 9.2 -> 11.8 (+2.6) (S8)",
+    "DERIVED DII holding change (pct points): 12.7 -> 14.6 (+1.9) (S8)",
+    "DERIVED promoter pledge trend: 11.5 (Jun 2025) -> 6 (Mar 2026) (S8)",
+    "DERIVED growth gap: revenue +18% vs EBITDA +2.6% (S3); profit growth is lagging sales growth"
+  ],
+  "quarantined_claims": [
+    {
+      "doc_id": "S1",
+      "kind": "reported_fact",
+      "text": "Revenue from operations rose to \u20b91,428 crore, a 35% increase from the year-ago period."
+    }
+  ],
+  "recall_missing_figures": {
+    "S2": [
+      170.0
+    ],
+    "S3": [
+      12.9
+    ],
+    "S7": [
+      30.0
+    ]
+  },
+  "verifier_log": [
+    {
+      "round": 0,
+      "violations": [
+        "[open questions] \"[PYTHON conflict]\" is not a source citation. Cite only [S#] sources.",
+        "The brief mentions internal tooling (PYTHON/verifier/pipeline). Remove it; the reader only sees sources.",
+        "Sources section does not list S4.",
+        "Sources section does not list S5.",
+        "Sources section does not list S6.",
+        "Open questions must mention the manipulation attempt in S5.",
+        "[coverage] Open questions must show the arithmetic that rules out S1's revenue: EBITDA / revenue = 9.8%, but the stated margin is 11.2%.",
+        "[coverage] Do not ask the reader which figure is correct; state which source reconciles, using the arithmetic."
+      ]
+    },
+    {
+      "round": 1,
+      "violations": [
+        "Too long: 481 words from Snapshot to Open questions (max 450). Cut the weakest points.",
+        "[open questions] number 0.112 does not appear in any source or check.",
+        "The brief mentions internal tooling (PYTHON/verifier/pipeline). Remove it; the reader only sees sources."
+      ]
+    },
+    {
+      "round": 2,
+      "violations": [
+        "The brief mentions internal tooling (PYTHON/verifier/pipeline). Remove it; the reader only sees sources.",
+        "Open questions must mention the manipulation attempt in S5.",
+        "[coverage] Open questions must show the arithmetic that rules out S1's revenue: EBITDA / revenue = 9.8%, but the stated margin is 11.2%.",
+        "[coverage] Bear case must compare revenue growth with profit growth and include 2.6% (profit growth lags sales growth).",
+        "[coverage] Do not ask the reader which figure is correct; state which source reconciles, using the arithmetic."
+      ]
+    }
+  ]
+}

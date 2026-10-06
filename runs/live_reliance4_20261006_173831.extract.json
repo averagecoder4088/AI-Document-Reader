@@ -1,0 +1,328 @@
+{
+  "decisions": {
+    "S1": {
+      "name": "Business Standard (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S2": {
+      "name": "AD HOC NEWS (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S3": {
+      "name": "Simply Wall Street (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-07-21",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S4": {
+      "name": "Alice Blue (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-09-30",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S5": {
+      "name": "TechGraph (headline via Google News RSS)",
+      "tier": 3,
+      "published": "2026-09-20",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S6": {
+      "name": "Yahoo Finance via yfinance (market-data aggregator, not an exchange filing)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    },
+    "S7": {
+      "name": "Yahoo Finance via yfinance (aggregated company financials, not an exchange filing)",
+      "tier": 3,
+      "published": "2026-10-06",
+      "included": true,
+      "reason": "",
+      "injection": false,
+      "injection_phrase": null
+    }
+  },
+  "extraction": {
+    "triage": [
+      {
+        "doc_id": "S1",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance, tier 3 news"
+      },
+      {
+        "doc_id": "S2",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance, tier 3 news"
+      },
+      {
+        "doc_id": "S3",
+        "company_match": true,
+        "published": "2026-07-21",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance earnings, tier 3 news"
+      },
+      {
+        "doc_id": "S4",
+        "company_match": true,
+        "published": "2026-09-30",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance agreement, tier 3 news"
+      },
+      {
+        "doc_id": "S5",
+        "company_match": true,
+        "published": "2026-09-20",
+        "tier": 3,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Relevant headline about Reliance stock price, tier 3 news"
+      },
+      {
+        "doc_id": "S6",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 4,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "Market data aggregator, tier 4 and fast-changing facts"
+      },
+      {
+        "doc_id": "S7",
+        "company_match": true,
+        "published": "2026-10-06",
+        "tier": 4,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "Aggregated financials, tier 4 and fast-changing facts"
+      }
+    ],
+    "claims": [
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Current price: 1,218.00 INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "52-week high: 1,611.80 INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "52-week low: 1,160.80 INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Trailing P/E: 21.7"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Forward P/E: 17.1"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Price to book: 1.82"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Debt to equity (percent): 46.3"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Market capitalisation: 1,648,255 crore INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Total debt: 502,514 crore INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Total cash: 258,880 crore INR"
+      },
+      {
+        "doc_id": "S6",
+        "kind": "reported_fact",
+        "text": "Reliance Industries Limited engages in hydrocarbon exploration and production, petroleum refining and marketing, petrochemicals, advanced materials and composites, renewable, financial services, retail, and digital services worldwide"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Revenue for quarter ended 2026-06-30: 309,468 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Revenue for quarter ended 2025-06-30: 243,632 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Revenue grew 27.0% from the same quarter a year earlier"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "EBITDA for quarter ended 2026-06-30: 38,967 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "EBITDA for quarter ended 2025-06-30: 44,182 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "EBITDA declined 11.8% from the same quarter a year earlier"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Operating income for quarter ended 2026-06-30: 32,417 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Operating income for quarter ended 2025-06-30: 29,063 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Operating income grew 11.5% from the same quarter a year earlier"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Net income for quarter ended 2026-06-30: 20,946 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Net income for quarter ended 2025-06-30: 26,994 crore INR"
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Net income declined 22.4% from the same quarter a year earlier"
+      },
+      {
+        "doc_id": "S1",
+        "kind": "reported_fact",
+        "text": "Headline reports: Reliance Industries gains 3% as Jio IPO plan fuels hopes of value unlocking"
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Headline reports: Jio Platforms plans IPO. Reliance Industries stock sits 24.42 percent below its high"
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "Headline reports: Results: Reliance Industries Limited Beat Earnings Expectations And Analysts Now Have New Forecasts"
+      },
+      {
+        "doc_id": "S4",
+        "kind": "reported_fact",
+        "text": "Headline reports: Reliance Industries shares move up after securing long-term green ammonia offtake agreement with Samsung C&T, details here"
+      },
+      {
+        "doc_id": "S5",
+        "kind": "reported_fact",
+        "text": "Headline reports: Reliance Industries Ltd (RELIANCE) Share/Stock Price Live NSE/BSE"
+      }
+    ],
+    "metrics": [
+      {
+        "doc_id": "S7",
+        "key": "revenue_q1_fy27",
+        "value": 309468.0,
+        "unit": "cr",
+        "stated_yoy_pct": 27.0
+      },
+      {
+        "doc_id": "S7",
+        "key": "ebitda_q1_fy27",
+        "value": 38967.0,
+        "unit": "cr",
+        "stated_yoy_pct": -11.8
+      },
+      {
+        "doc_id": "S7",
+        "key": "pat_q1_fy27",
+        "value": 26994.0,
+        "unit": "cr",
+        "stated_yoy_pct": 22.4
+      }
+    ]
+  },
+  "python_checks": [
+    "DERIVED growth gap: revenue +27% vs EBITDA -11.8% (S7); profit growth is lagging sales growth"
+  ],
+  "required_findings": [
+    [
+      "bear case",
+      "Profit growth lags sales growth: revenue +27% but EBITDA -11.8% [S7]."
+    ],
+    [
+      "open questions",
+      "No official filings or earnings-call transcripts were included; the figures come from aggregated market data and the news items are headlines only (article text was not retrieved)."
+    ]
+  ],
+  "quarantined_claims": [],
+  "recall_missing_figures": {},
+  "verifier_log": [
+    {
+      "round": 0,
+      "violations": [
+        "The brief mentions FY26, which no source mentions. Use only periods that appear in the sources.",
+        "Included source S3 is never used in the brief body (use it, or list it in Sources with the word 'unused').",
+        "Included source S5 is never used in the brief body (use it, or list it in Sources with the word 'unused')."
+      ]
+    },
+    {
+      "round": 1,
+      "violations": []
+    }
+  ]
+}

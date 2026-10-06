@@ -1,0 +1,10 @@
+---
+source: Business Standard (headline via Google News RSS)
+url: https://news.google.com/rss/articles/CBMi2AFBVV95cUxPTlI4QmtxMkVIVFd2WEdBSEwzYU0yVDlWZDlHNlFQaTRBUGc3OXotTnBONjlPMmMyUVZvVnFoWGNDZ25CT1lQWkp2dzBYMDVQSWNvYjlZblltT1RCdmMxbXpCV3U5aXo3WGVXRmpHVkZINktWZk80ZDZGWktjV2x0ZlhzVWdPMkJCTXVqTkpmX2lyVjExbjhDR3hKbWxBNGJla0xYVzBWZ1pTQk9mYmpvNGxCd1dIM05XT2U2cVE2Zno4ZG1kMjBRMWdKSjlLUFFRQ2ZreWt4WnDSAd4BQVVfeXFMUGsxX3lYVUZ4MS1feG54ZEo0QkoxS2lzSUNqNFE4T1pINVBpRFB4ejdrYS1BOEZDVkJiTVJWejJDTEtITGZpWjREUWNfc2dwZndwX1ZvUEVEZnFyVHBrWW1KdHJsVGlCUjA4bjkweW4zWlZFUGxHSTREQm5sYmd5MzQ4Ukkyd19aMFRBUFNtb3FEOG5MdkdtanZjZXBuV1ZaZGk5MkZoZjNJX01wdEcxTVBnNmFUZk91eWRCeUN4S0sySGM1UEdIZm9IUGFmbjAzTHE0d3puaXFESjVrbmNR?oc=5
+published: 2026-10-06
+type: news headline (title only; article text not fetched)
+---
+
+# Reliance Industries gains 3% as Jio IPO plan fuels hopes of value unlocking
+
+Only the headline was fetched. The article body was not retrieved.

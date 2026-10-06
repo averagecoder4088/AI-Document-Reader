@@ -1,0 +1,8 @@
+.env
+__pycache__/
+.DS_Store
+runs.zip
+*.backup*.py
+final_brief_run6.md
+list_models.py
+video_script.md

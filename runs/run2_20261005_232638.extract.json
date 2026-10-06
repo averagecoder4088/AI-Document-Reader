@@ -1,0 +1,201 @@
+{
+  "extraction": {
+    "triage": [
+      {
+        "doc_id": "S1",
+        "company_match": true,
+        "published": "2026-08-09",
+        "tier": 3,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "Revenue and profit figures are superseded by official filing S3."
+      },
+      {
+        "doc_id": "S2",
+        "company_match": true,
+        "published": "2026-08-11",
+        "tier": 2,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Official earnings call transcript."
+      },
+      {
+        "doc_id": "S3",
+        "company_match": true,
+        "published": "2026-08-08",
+        "tier": 1,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Official company press release."
+      },
+      {
+        "doc_id": "S4",
+        "company_match": true,
+        "published": "2024-03-18",
+        "tier": 3,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "Pledge data superseded by newer filing S8."
+      },
+      {
+        "doc_id": "S5",
+        "company_match": true,
+        "published": "2026-08-12",
+        "tier": 4,
+        "include": false,
+        "injection_attempt": true,
+        "reason": "Blog post with injection attempt."
+      },
+      {
+        "doc_id": "S6",
+        "company_match": false,
+        "published": "2026-08-20",
+        "tier": 3,
+        "include": false,
+        "injection_attempt": false,
+        "reason": "Refers to Sarvottam Cable Network, a different entity."
+      },
+      {
+        "doc_id": "S7",
+        "company_match": true,
+        "published": "2026-09-02",
+        "tier": 1,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Official exchange filing regarding GST demand."
+      },
+      {
+        "doc_id": "S8",
+        "company_match": true,
+        "published": "2026-07-15",
+        "tier": 1,
+        "include": true,
+        "injection_attempt": false,
+        "reason": "Official shareholding disclosure."
+      }
+    ],
+    "claims": [
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "For the full year FY27 we are maintaining our revenue growth guidance of 15 to 17 percent."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "Data-centre cables are now about 9 percent of our domestic revenue, and we think that can double in two years."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "management_claim",
+        "text": "About two-thirds of our contracts have price-variation clauses, but they reset with a lag of one to two quarters."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "receivable days increased from 78 to 96 over the last year."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Bharuch capex is \u20b9620 crore in total, about 70 percent already spent."
+      },
+      {
+        "doc_id": "S2",
+        "kind": "reported_fact",
+        "text": "Net debt to equity is 0.35 times."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "reported_fact",
+        "text": "The new Bharuch (Gujarat) plant, adding about 30% to cable capacity, is on track to begin commercial production in Q3 FY27."
+      },
+      {
+        "doc_id": "S3",
+        "kind": "management_claim",
+        "text": "Margins were affected by a sharp rise in copper prices during the quarter, which we expect to pass on to customers over the next two quarters."
+      },
+      {
+        "doc_id": "S7",
+        "kind": "reported_fact",
+        "text": "Sarvottam Cables Ltd hereby informs that it has received an order from the office of the Joint Commissioner, CGST, Mumbai, raising a demand of \u20b946.3 crore (including interest and penalty) relating to input tax credit claimed for FY2020-21 and FY2021-22."
+      },
+      {
+        "doc_id": "S7",
+        "kind": "management_claim",
+        "text": "The Company believes it has a strong case on merits, based on legal advice, and intends to file an appeal before the appropriate authority."
+      }
+    ],
+    "metrics": [
+      {
+        "doc_id": "S3",
+        "key": "revenue_q1_fy27",
+        "value": 1248,
+        "unit": "cr",
+        "stated_yoy_pct": 18.0
+      },
+      {
+        "doc_id": "S3",
+        "key": "revenue_q1_fy26",
+        "value": 1058,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_q1_fy27",
+        "value": 140,
+        "unit": "cr",
+        "stated_yoy_pct": 2.6
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_q1_fy26",
+        "value": 136,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "ebitda_margin_pct_q1_fy27",
+        "value": 11.2,
+        "unit": "pct",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "pat_q1_fy27",
+        "value": 82,
+        "unit": "cr",
+        "stated_yoy_pct": 5.9
+      },
+      {
+        "doc_id": "S3",
+        "key": "pat_q1_fy26",
+        "value": 77,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "order_book_cr_jun26",
+        "value": 3900,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      },
+      {
+        "doc_id": "S3",
+        "key": "order_book_cr_jun25",
+        "value": 3150,
+        "unit": "cr",
+        "stated_yoy_pct": null
+      }
+    ]
+  },
+  "python_checks": [
+    "GROWTH revenue_q1_fy27 S3: 1248 vs prior 1058 (S3) = 18.0%, stated 18% -> matches",
+    "GROWTH pat_q1_fy27 S3: 82 vs prior 77 (S3) = 6.5%, stated 5.9% -> DOES NOT MATCH",
+    "GROWTH ebitda_q1_fy27 S3: 140 vs prior 136 (S3) = 2.9%, stated 2.6% -> matches",
+    "MARGIN with revenue S3=1248: EBITDA 140 (S3) / revenue = 11.2%, stated margin 11.2% (S3) -> matches"
+  ]
+}
