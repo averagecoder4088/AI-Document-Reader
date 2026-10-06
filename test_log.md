@@ -3,7 +3,7 @@
 All runs: `openai/gpt-oss-120b` on Groq, SRVCABLE research pack, today = 23 Sep 2026 (unless marked live). One sample per run
 (temperature 0.2), so read the differences as design effects, not statistics. I first prototyped Runs 1-2 on Gemini Flash;
 I moved to Groq when Gemini model names were retired, and re-ran everything on Groq. Only the Groq runs are logged below.
-The 5 Oct `run1` and `run2` files in `runs/` are the Gemini prototypes and are not logged. Runs 1 and 2 here are
+The Gemini prototype runs from 5 Oct are not included in the repo. Runs 1 and 2 here are
 `run1_20261006_000605` and `run2_20261006_001425`.
 
 ## Summary
